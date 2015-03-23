@@ -16,5 +16,11 @@
     "repository":   "sonyxperiadev/thermanager",
     "target_path":  "vendor/sony/system/thermanager",
     "revision":     "master"
+  },
+  {
+    "remote":       "github",
+    "repository":   "sonyxperiadev/timekeep",
+    "target_path":  "vendor/sony/system/timekeep",
+    "revision":     "master"
   }
 ]
