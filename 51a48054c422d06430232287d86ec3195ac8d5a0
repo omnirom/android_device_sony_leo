@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6b22818b_28b30d00",
+        "filename": "omni.dependencies",
+        "patchSetId": 2
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1001279
+      },
+      "writtenOn": "2015-03-23T19:52:10Z",
+      "side": 1,
+      "message": "You should keep it to shinano.\nOtherwise you need to make a lot of changes in all devices and shinano itself.\n\nThere is no conflict having repository as shinano-common and target path as shinano.\nLook at all devices includes in device.mk and boardconfig.mk to understand what I mean; you will have to replace all shinano to shinano-common which is not right as any changes in upstream will cause headaches in making sure you have to change shinano to shinano-common (causing where is the bug kind of hunts)",
+      "range": {
+        "startLine": 5,
+        "startChar": 47,
+        "endLine": 5,
+        "endChar": 49
+      },
+      "revId": "51a48054c422d06430232287d86ec3195ac8d5a0",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
