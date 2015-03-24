@@ -21,6 +21,9 @@ $(call inherit-product, vendor/omni/config/gsm.mk)
 # Inherit Omni product configuration
 $(call inherit-product, vendor/omni/config/common.mk)
 
+DEVICE_PACKAGE_OVERLAYS += \
+    device/sony/leo/overlay
+
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
 $(call inherit-product-if-exists, device/sony/shinano-common/device.mk)
