@@ -15,6 +15,9 @@
 TARGET_KERNEL_CONFIG := aosp_shinano_leo_defconfig
 TARGET_KERNEL_SOURCE := kernel/sony/msm
 
+# bootanimation
+TARGET_BOOTANIMATION_SIZE := 960x640
+
 # Inherit Omni GSM telephony parts
 $(call inherit-product, vendor/omni/config/gsm.mk)
 
