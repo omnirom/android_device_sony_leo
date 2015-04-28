@@ -26,11 +26,12 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
-$(call inherit-product-if-exists, device/sony/shinano-common/device.mk)
-$(call inherit-product-if-exists, vendor/sony/leo/leo-vendor.mk)
-$(call inherit-product, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
-$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
-#$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4354/device-bcm.mk)
+$(call inherit-product, device/sony/shinano-common/device.mk)
+$(call inherit-product, vendor/sony/leo/leo-vendor.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
+$(call inherit-product, hardware/broadcom/wlan/bcmdhd/config/config-bcm.mk)
+$(call inherit-product-if-exists, prebuilts/chromium/webview_prebuilt.mk)
+$(call inherit-product-if-exists, vendor/google/products/gms.mk)
 
 PRODUCT_COPY_FILES += \
     device/sony/leo/rootdir/system/etc/BCM4339.hcd:system/etc/firmware/BCM43xx.hcd \
@@ -39,7 +40,8 @@ PRODUCT_COPY_FILES += \
     device/sony/leo/rootdir/system/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
     device/sony/leo/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
     device/sony/leo/rootdir/system/etc/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    device/sony/leo/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf
+    device/sony/leo/rootdir/system/etc/libnfc-nxp.conf:system/etc/libnfc-nxp.conf \
+    device/sony/leo/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml
 
 PRODUCT_COPY_FILES += \
     device/sony/leo/rootdir/system/etc/tfa98xx/coldboot.patch:/system/etc/tfa98xx/coldboot.patch \
@@ -87,4 +89,5 @@ PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=480
+    ro.sf.lcd_density=480 \
+    ro.usb.pid_suffix=1BA
