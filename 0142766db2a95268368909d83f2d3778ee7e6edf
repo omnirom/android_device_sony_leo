@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f8eba960_87bc2ad8",
+        "filename": "recovery/root/etc/bootrec-device",
+        "patchSetId": 2
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1001276
+      },
+      "writtenOn": "2015-06-30T10:15:00Z",
+      "side": 1,
+      "message": "Um? What is that?",
+      "revId": "0142766db2a95268368909d83f2d3778ee7e6edf",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
