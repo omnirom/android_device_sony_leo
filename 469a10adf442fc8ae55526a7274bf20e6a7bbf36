@@ -16,6 +16,24 @@
       "revId": "469a10adf442fc8ae55526a7274bf20e6a7bbf36",
       "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f8eba960_c77b5220",
+        "filename": "aosp_d6603.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1000515
+      },
+      "writtenOn": "2015-06-30T17:18:09Z",
+      "side": 1,
+      "message": "Yeah!\nI was thinking the same way. I will upload new PS.\nThanks!",
+      "parentUuid": "f8eba960_079b7a78",
+      "revId": "469a10adf442fc8ae55526a7274bf20e6a7bbf36",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
     }
   ]
 }
