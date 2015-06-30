@@ -13,6 +13,7 @@
 # limitations under the License.
 
 include device/sony/shinano-common/BoardConfig.mk
+include device/sony/shinano-common/BoardConfigOmni.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := D6603
 
@@ -20,7 +21,5 @@ TARGET_BOOTLOADER_BOARD_NAME := D6603
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12656242688
 
 #BOARD_KERNEL_CMDLINE += mem=1281M@255M mem=1409M@2048M
-
-BUILD_KERNEL := true
 
 PRODUCT_VENDOR_KERNEL_HEADERS += device/sony/leo/kernel-headers
