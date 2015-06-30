@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f8eba960_079b7a78",
+        "filename": "aosp_d6603.mk",
+        "patchSetId": 3
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1000124
+      },
+      "writtenOn": "2015-06-30T16:12:16Z",
+      "side": 1,
+      "message": "We should keep these \"AOSP\" here, since anything in omni_leo.mk will override this anyway.",
+      "revId": "469a10adf442fc8ae55526a7274bf20e6a7bbf36",
+      "serverId": "56841c99-7c94-43d4-bf0b-cb4707e66d55",
+      "unresolved": false
+    }
+  ]
+}
