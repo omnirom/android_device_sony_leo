@@ -15,6 +15,9 @@
 include device/sony/shinano-common/BoardConfig.mk
 include device/sony/shinano-common/BoardConfigOmni.mk
 
+# Assert
+TARGET_OTA_ASSERT_DEVICE := D6602,D6603,D6633,D6643,z3,leo
+
 TARGET_BOOTLOADER_BOARD_NAME := D6603
 
 #Reserve space for data encryption (12656259072-16384)
