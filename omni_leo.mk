@@ -15,6 +15,9 @@
 # Kernel
 TARGET_KERNEL_SOURCE := kernel/sony/msm
 
+# Don't use DSPManager
+TARGET_NO_DSPMANAGER := true
+
 # Bootanimation
 TARGET_BOOTANIMATION_SIZE := 960x640
 
