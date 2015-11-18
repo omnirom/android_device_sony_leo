@@ -9,7 +9,7 @@
     "remote":       "omnirom",
     "repository":   "android_kernel_sony_msm",
     "target_path":  "kernel/sony/msm",
-    "revision":     "android-6.0"
+    "revision":     "android-6.0-bf64_1.1"
   },
   {
     "remote":       "omnirom",
