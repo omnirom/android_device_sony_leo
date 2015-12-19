@@ -19,7 +19,7 @@ TARGET_KERNEL_SOURCE := kernel/sony/msm
 TARGET_NO_DSPMANAGER := true
 
 # Bootanimation
-TARGET_BOOTANIMATION_SIZE := 960x640
+TARGET_BOOTANIMATION_SIZE := 1080x608
 
 # Inherit AOSP Shinano common device parts
 $(call inherit-product, device/sony/leo/aosp_d6603.mk)
