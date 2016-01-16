@@ -18,10 +18,6 @@ TARGET_KERNEL_SOURCE := kernel/sony/msm
 # Bootanimation
 TARGET_BOOTANIMATION_SIZE := 1080x608
 
-# NFC
-PRODUCT_PACKAGES += \
-    nfc_nci.leo
-
 # Inherit AOSP Shinano common device parts
 $(call inherit-product, device/sony/leo/aosp_d6603.mk)
 
