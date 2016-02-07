@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-include device/sony/shinano-common/BoardConfig.mk
+include device/sony/shinano-common/PlatformConfig.mk
 include device/sony/common/CommonConfig.mk
 include device/sony/shinano-common/BoardConfigOmni.mk
 
