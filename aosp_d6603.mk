@@ -19,6 +19,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
+$(call inherit-product, device/sony/common/common.mk)
 $(call inherit-product, device/sony/shinano-common/device.mk)
 $(call inherit-product, vendor/sony/leo/leo-vendor.mk)
 $(call inherit-product, frameworks/native/build/phone-xxxhdpi-3072-dalvik-heap.mk)
@@ -68,9 +69,23 @@ PRODUCT_COPY_FILES += \
     device/sony/leo/rootdir/system/etc/tfa98xx/VoiceCallEarpice_top.preset:/system/etc/tfa98xx/VoiceCallEarpice_top.preset \
     device/sony/leo/rootdir/system/etc/tfa98xx/VoiceCallEarpice_top.eq:/system/etc/tfa98xx/VoiceCallEarpice_top.eq
 
+# Device Init
+PRODUCT_PACKAGES += \
+    init.recovery.leo \
+    init.leo \
+    ueventd.leo
+
+# Lights
+PRODUCT_PACKAGES += \
+    lights.leo
+
+# Simple PowerHAL
+PRODUCT_PACKAGES += \
+    power.leo
+
 # NFC config
-PRODUCT_PACKAGES += nfc_nci.leo
-ADDITIONAL_DEFAULT_PROPERTIES += ro.hardware.nfc_nci=leo
+PRODUCT_PACKAGES += \
+    nfc_nci.leo
 
 PRODUCT_NAME := aosp_d6603
 PRODUCT_DEVICE := leo

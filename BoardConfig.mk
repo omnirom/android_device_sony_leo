@@ -13,6 +13,7 @@
 # limitations under the License.
 
 include device/sony/shinano-common/BoardConfig.mk
+include device/sony/common/CommonConfig.mk
 include device/sony/shinano-common/BoardConfigOmni.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := D6603
@@ -20,9 +21,8 @@ TARGET_BOOTLOADER_BOARD_NAME := D6603
 #Reserve space for data encryption (12656259072-16384)
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12656242688
 
-#BOARD_KERNEL_CMDLINE += mem=1281M@255M mem=1409M@2048M
+BOARD_KERNEL_CMDLINE += androidboot.hardware=leo
 
 PRODUCT_VENDOR_KERNEL_HEADERS += device/sony/leo/kernel-headers
 
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/clearpad/wakeup_gesture"
-TARGET_TAP_TO_WAKE_STRING := true
