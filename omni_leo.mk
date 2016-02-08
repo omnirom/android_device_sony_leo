@@ -12,17 +12,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Kernel
-TARGET_KERNEL_SOURCE := kernel/sony/msm
-
 # Bootanimation
 TARGET_BOOTANIMATION_SIZE := 1080x608
 
+# Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    telephony.lteOnGSMDevice=1
+
+# TWRP
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
+TW_THEME := portrait_hdpi
+
 # Inherit AOSP Shinano common device parts
 $(call inherit-product, device/sony/leo/aosp_d6603.mk)
-
-# Inherit Omni Shinano common device parts
-$(call inherit-product, device/sony/shinano-common/device_omni.mk)
 
 # Inherit Omni GSM telephony parts
 $(call inherit-product, vendor/omni/config/gsm.mk)
