@@ -22,13 +22,6 @@ TW_THEME := portrait_hdpi
 # Inherit AOSP leo device parts
 $(call inherit-product, device/sony/leo/aosp_d6603.mk)
 
-# Inherit Omni GSM telephony parts
-$(call inherit-product, device/sony/common/radio.mk)
-$(call inherit-product, vendor/omni/config/gsm.mk)
-
-# Inherit Omni product configuration
-$(call inherit-product, vendor/omni/config/common.mk)
-
 # Override Product Name for OmniROM
 PRODUCT_NAME := omni_leo
 PRODUCT_MODEL := Xperia Z3
