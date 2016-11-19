@@ -19,6 +19,10 @@ TARGET_BOOTANIMATION_SIZE := 1080x608
 BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
 TW_THEME := portrait_hdpi
 
+#add external config to prevent changes into original defconfig
+# path is relative to workaround a bug into kernel makefiles
+TARGET_KERNEL_ADDITIONAL_CONFIG := ../../../../../../device/sony/z3/omni_defconfig
+
 # Inherit AOSP leo device parts
 $(call inherit-product, device/sony/leo/aosp_d6603.mk)
 
