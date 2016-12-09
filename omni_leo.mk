@@ -22,10 +22,6 @@ TW_THEME := portrait_hdpi
 # Inherit AOSP leo device parts
 $(call inherit-product, device/sony/leo/aosp_d6603.mk)
 
-# Snapdragon Camera
-PRODUCT_PACKAGES += \
-    SnapdragonCamera
-
 # Inherit Omni GSM telephony parts
 PRODUCT_PROPERTY_OVERRIDES += telephony.lteOnGSMDevice=1
 $(call inherit-product, vendor/omni/config/gsm.mk)
